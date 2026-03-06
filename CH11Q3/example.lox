@@ -1,0 +1,12 @@
+{
+  var x = 5;  // unused should report error
+  var y = 10;
+  print y;    // y is used
+  
+  {
+    var a = 1;  // unused should report error
+    var b = 2;
+    var c = b + 3;
+    print c;    // c is used
+  }
+} 
